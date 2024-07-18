@@ -40,4 +40,18 @@ using a promise :-
 3. finally() method : the finally() method gets executed when the promise is either resolved successfully or rejected. 
 
 
+Fetch API :- 
 
+- API -> Application programming Interface (which is used to fetch the data)
+- the fetch API provides an interface for fetching (sending / receiving) resources. 
+- it uses Request and Response objects.
+- The Fetch() is used to fetch a data.
+
+syntax :- 
+let promise = fetch(url, [option])
+
+understanding some Terms :-
+
+1. AJAX is a Asynchronous JS & XML
+2. JSON is javascript Object Notation (AJAJ -> Asynchronous Javascript) & JSON
+3. JSON() method : which is return a second promise that resolve with the result of parsing the response body text as json. (input is JSON & output is JS object)

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="text"></p>
+    <script>
+        const URL = "https://cat-fact.herokuapp.com/facts";
+        const facts = document.querySelector("#text")
+
+        const getFacts = async () => {
+            console.log("getting res...")
+            let response = await fetch(URL)
+            console.log(response)
+            let data = await response.json();
+            facts.innerText = data[0].text;
+        }
+
+    </script>
+</body>
+</html>
